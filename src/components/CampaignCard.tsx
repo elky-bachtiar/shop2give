@@ -30,7 +30,7 @@ export function CampaignCard({ campaign }: CampaignCardProps) {
           />
           {isFullyFunded && (
             <div className="absolute right-4 top-4">
-              <Badge variant="success" showIcon>Fully Funded</Badge>
+              <Badge variant="success\" showIcon>Fully Funded</Badge>
             </div>
           )}
         </div>
