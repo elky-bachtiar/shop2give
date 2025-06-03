@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
-import { Header } from '../components/Header.js';
-import { Footer } from '../components/Footer.js';
-import { products } from '../data/products.js';
-import ProductDetail from '../components/product/ProductDetail.js';
-import { Product as ProductType } from '../types/index.js';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { products } from '../data/products';
+import ProductDetail from '../components/product/ProductDetail';
+import { Product as ProductType } from '../types';
 
 export function ProductPage() {
   const { id } = useParams<{ id: string }>();
