@@ -1,18 +1,4 @@
-import natural from 'natural';
-
 export type Category = 'medical' | 'education' | 'mission' | 'community' | 'emergency';
-
-interface CategoryKeywords {
-  [key: string]: string[];
-}
-
-const categoryKeywords: CategoryKeywords = {
-  medical: ['surgery', 'treatment', 'hospital', 'cancer', 'medical', 'health', 'operation', 'therapy'],
-  education: ['school', 'tuition', 'university', 'student', 'education', 'scholarship', 'learning', 'study'],
-  mission: ['mission', 'church', 'ministry', 'faith', 'bible', 'christian', 'missionary', 'gospel'],
-  community: ['community', 'neighborhood', 'local', 'family', 'support', 'help', 'assistance'],
-  emergency: ['emergency', 'urgent', 'crisis', 'disaster', 'immediate', 'help']
-};
 
 export interface CategorySuggestion {
   category: Category;
@@ -20,38 +6,29 @@ export interface CategorySuggestion {
   keywords: string[];
 }
 
-export function detectCategory(text: string): CategorySuggestion | null {
+export async function detectCategory(text: string): Promise<CategorySuggestion | null> {
   if (!text) return null;
 
-  const tokenizer = new natural.WordTokenizer();
-  const tokens = tokenizer.tokenize(text.toLowerCase()) || [];
-  
-  let maxMatches = 0;
-  let suggestedCategory: Category | null = null;
-  let matchedKeywords: string[] = [];
+  try {
+    const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/detect-category`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ text })
+    });
 
-  Object.entries(categoryKeywords).forEach(([category, keywords]) => {
-    const matches = keywords.filter(keyword => 
-      tokens.some(token => token.includes(keyword))
-    );
-
-    if (matches.length > maxMatches) {
-      maxMatches = matches.length;
-      suggestedCategory = category as Category;
-      matchedKeywords = matches;
+    if (!response.ok) {
+      console.error('Category detection failed:', await response.text());
+      return null;
     }
-  });
 
-  if (!suggestedCategory || maxMatches === 0) return null;
-
-  // Calculate confidence based on number of matches
-  const confidence = Math.min((maxMatches / 3) * 100, 100);
-
-  return {
-    category: suggestedCategory,
-    confidence,
-    keywords: matchedKeywords
-  };
+    return await response.json();
+  } catch (error) {
+    console.error('Error detecting category:', error);
+    return null;
+  }
 }
 
 export const categoryInfo = {

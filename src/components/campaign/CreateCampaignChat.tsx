@@ -13,6 +13,7 @@ interface CreateCampaignChatProps {
 
 export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateCampaignChatProps) {
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [isDetectingCategory, setIsDetectingCategory] = useState(false);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     accept: {
@@ -53,11 +54,15 @@ export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateC
 
   useEffect(() => {
     const lastMessage = messages[messages.length - 1];
-    if (lastMessage?.role === 'user') {
-      const suggestion = detectCategory(lastMessage.content);
-      if (suggestion && onCategoryDetected) {
-        onCategoryDetected(suggestion.category);
-      }
+    if (lastMessage?.role === 'user' && !isDetectingCategory) {
+      setIsDetectingCategory(true);
+      detectCategory(lastMessage.content)
+        .then(suggestion => {
+          if (suggestion && onCategoryDetected) {
+            onCategoryDetected(suggestion.category);
+          }
+        })
+        .finally(() => setIsDetectingCategory(false));
     }
   }, [messages, onCategoryDetected]);
 
@@ -106,7 +111,7 @@ export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateC
               </div>
             </motion.div>
           ))}
-          {isLoading && (
+          {(isLoading || isDetectingCategory) && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
