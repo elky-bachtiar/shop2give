@@ -1,49 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Send, Loader2, Image as ImageIcon, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { useChat } from '@ai-sdk/react';
+import { Send, Image as ImageIcon, X } from 'lucide-react';
 import { Button } from '../ui/Button';
-import { detectCategory, type Category } from '../../lib/categoryDetection';
 import { useDropzone } from 'react-dropzone';
+import ChatMessage from '../ChatMessage';
+import LoadingDots from '../LoadingDots';
 
 interface CreateCampaignChatProps {
   onUpdateForm: (data: any) => void;
-  onCategoryDetected?: (category: Category) => void;
+  onCategoryDetected?: (category: string) => void;
 }
 
-const questions = [
-  "What cause are you raising funds for?",
-  "Share your story - why does this matter to you?",
-  "What's your fundraising goal amount?",
-  "Which category fits best: Medical, Education, Mission & Faith, Community, or Emergency Relief?"
-];
-
-const getAIResponse = (userMessage: string, questionIndex: number, detectedCategory: Category | null): string => {
-  const lowerMessage = userMessage.toLowerCase();
-  
-  if (questionIndex === 0 && detectedCategory) {
-    switch (detectedCategory) {
-      case 'medical':
-        return "I notice this is a medical campaign. These typically perform best with personal stories and regular updates. Would you like tips on making your campaign compelling?";
-      case 'education':
-        return "Education campaigns often succeed when they show the long-term impact. Can you share what this education will lead to?";
-      case 'mission':
-        return "Faith-based campaigns resonate strongly with communities. Let's focus on the spiritual impact and community involvement.";
-      case 'community':
-        return "Community projects thrive on local support. Would you like suggestions for engaging your neighborhood?";
-      case 'emergency':
-        return "For urgent needs, it's crucial to clearly communicate the immediate impact. Let me help you structure your appeal.";
-    }
-  }
-  
-  return questions[questionIndex + 1] || "Thank you for sharing! I'll help you create your campaign now.";
-};
-
 export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateCampaignChatProps) {
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [currentInput, setCurrentInput] = useState('');
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [isTyping, setIsTyping] = useState(false);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+
+  const {
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+    isLoading,
+    error
+  } = useChat({
+    api: `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`,
+    headers: {
+      Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    onResponse: (response) => {
+      // Extract campaign data from AI response and update form
+      const campaignData = extractCampaignData(response);
+      if (campaignData) {
+        onUpdateForm(campaignData);
+      }
+
+      // Detect category if available
+      if (campaignData?.category && onCategoryDetected) {
+        onCategoryDetected(campaignData.category);
+      }
+    },
+  });
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     accept: {
@@ -60,112 +56,35 @@ export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateC
     }
   });
 
-  useEffect(() => {
-    if (currentQuestion === 0) {
-      addAIMessage(questions[0]);
-    }
-  }, []);
-
-  const addAIMessage = async (text: string) => {
-    setIsTyping(true);
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    setMessages(prev => [...prev, { id: Date.now().toString(), text, sender: 'ai' }]);
-    setIsTyping(false);
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!currentInput.trim() && !imagePreview) return;
-
-    // Add user message
-    const userMessage = { 
-      id: Date.now().toString(), 
-      text: currentInput,
-      sender: 'user' as const,
-      image: imagePreview || undefined
-    };
-    setMessages(prev => [...prev, userMessage]);
-    setCurrentInput('');
-    setImagePreview(null);
-
-    // Detect category from user input
-    const suggestion = await detectCategory(currentInput);
-    if (suggestion && onCategoryDetected) {
-      onCategoryDetected(suggestion.category);
-    }
-
-    // Update form data based on current question
-    const formUpdate: any = {};
-    switch (currentQuestion) {
-      case 0:
-        formUpdate.title = currentInput;
-        break;
-      case 1:
-        formUpdate.description = currentInput;
-        break;
-      case 2:
-        formUpdate.goalAmount = parseInt(currentInput.replace(/[^0-9]/g, ''));
-        break;
-      case 3:
-        formUpdate.category = currentInput;
-        break;
-    }
-    onUpdateForm(formUpdate);
-
-    // Get AI response
-    const aiResponse = getAIResponse(currentInput, currentQuestion, suggestion?.category || null);
-    
-    // Move to next question
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(prev => prev + 1);
-      await addAIMessage(aiResponse);
-    }
+    if (!input.trim() && !imagePreview) return;
+    handleSubmit(e);
   };
 
   return (
     <div className="flex h-[600px] flex-col rounded-lg border border-gray-200 bg-white">
-      <div className="flex-1 overflow-y-auto p-4">
-        <AnimatePresence>
-          {messages.map((message) => (
-            <motion.div
-              key={message.id}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              className={`mb-4 flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
-            >
-              <div
-                className={`rounded-lg px-4 py-2 ${
-                  message.sender === 'user'
-                    ? 'bg-brand-teal text-white'
-                    : 'bg-gray-100 text-gray-900'
-                } max-w-[80%]`}
-              >
-                {message.text}
-                {message.image && (
-                  <img 
-                    src={message.image} 
-                    alt="Uploaded content"
-                    className="mt-2 rounded-md"
-                  />
-                )}
-              </div>
-            </motion.div>
-          ))}
-          {isTyping && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center space-x-2 text-gray-500"
-            >
-              <Loader2 className="h-4 w-4 animate-spin" />
-              <span>AI is typing...</span>
-            </motion.div>
-          )}
-        </AnimatePresence>
+      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        {messages.map((message) => (
+          <ChatMessage key={message.id} message={message} />
+        ))}
+
+        {isLoading && (
+          <div className="flex justify-start">
+            <div className="rounded-2xl bg-gray-100 px-4 py-2">
+              <LoadingDots />
+            </div>
+          </div>
+        )}
+
+        {error && (
+          <div className="rounded-md bg-red-50 p-4 text-sm text-red-500">
+            Error: {error.message}
+          </div>
+        )}
       </div>
 
-      <form onSubmit={handleSubmit} className="border-t border-gray-200 p-4">
+      <form onSubmit={onSubmit} className="border-t border-gray-200 p-4">
         {imagePreview && (
           <div className="mb-2 relative inline-block">
             <img 
@@ -181,6 +100,7 @@ export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateC
             </button>
           </div>
         )}
+        
         <div className="flex space-x-2">
           <div {...getRootProps()} className="flex-shrink-0">
             <input {...getInputProps()} />
@@ -192,18 +112,42 @@ export function CreateCampaignChat({ onUpdateForm, onCategoryDetected }: CreateC
               <ImageIcon className="h-5 w-5" />
             </Button>
           </div>
+          
           <input
-            type="text"
-            value={currentInput}
-            onChange={(e) => setCurrentInput(e.target.value)}
+            value={input}
+            onChange={handleInputChange}
+            placeholder="Type your message..."
             className="flex-1 rounded-lg border border-gray-300 px-4 py-2 focus:border-brand-teal focus:outline-none focus:ring-1 focus:ring-brand-teal"
-            placeholder="Type your answer..."
           />
-          <Button type="submit" disabled={!currentInput.trim() && !imagePreview || isTyping}>
+          
+          <Button 
+            type="submit" 
+            disabled={!input.trim() && !imagePreview || isLoading}
+          >
             <Send className="h-5 w-5" />
           </Button>
         </div>
       </form>
     </div>
   );
+}
+
+function extractCampaignData(response: string): any {
+  try {
+    // Look for JSON-like structures in the response
+    const match = response.match(/\{[\s\S]*\}/);
+    if (match) {
+      const data = JSON.parse(match[0]);
+      return {
+        title: data.title,
+        description: data.description,
+        goalAmount: data.goalAmount,
+        category: data.category,
+      };
+    }
+    return null;
+  } catch (error) {
+    console.error('Error extracting campaign data:', error);
+    return null;
+  }
 }
