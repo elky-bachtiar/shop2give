@@ -37,7 +37,7 @@ export const useAuth = create<AuthState>((set, get) => ({
         const { data: profile } = await supabase
           .from('profiles')
           .select('*')
-          .eq('id', user.id)
+          .eq('user_id', user.id)
           .single();
 
         set({ 
@@ -114,7 +114,7 @@ export const useAuth = create<AuthState>((set, get) => ({
       const { error } = await supabase
         .from('profiles')
         .update(data)
-        .eq('id', user.id);
+        .eq('user_id', user.id);
 
       if (error) throw error;
 
