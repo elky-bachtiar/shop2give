@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import { useAuth } from '../../lib/auth';
 import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
+import { authSchema } from '../../lib/validation';
+import { handleError, ErrorDetails } from '../../lib/errorHandling';
 
 type FormData = {
   email: string;
@@ -15,7 +18,10 @@ type FormData = {
 export function AuthForm() {
   const navigate = useNavigate();
   const { signIn, isLoading } = useAuth();
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({  
+    resolver: zodResolver(authSchema),
+    mode: 'onBlur'  // Validate on blur for better UX
+  });
   const [error, setError] = useState<string | null>(null);
 
   const onSubmit = async (data: FormData) => {
@@ -25,9 +31,10 @@ export function AuthForm() {
       toast.success('Login successful! 🎉');
       navigate('/campaign-ai');
     } catch (err) {
-      const message = err instanceof Error ? err.message : 'Failed to sign in';
-      setError(message);
-      toast.error(message);
+      // Use our standardized error handler
+      const errorDetails: ErrorDetails = handleError(err);
+      setError(errorDetails.message);
+      toast.error(errorDetails.message);
     }
   };
 

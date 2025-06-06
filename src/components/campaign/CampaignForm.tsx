@@ -1,10 +1,15 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { Editor } from '@tinymce/tinymce-react';
 import { useDropzone } from 'react-dropzone';
+import { toast } from 'react-hot-toast';
 import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
 import { useCampaigns } from '../../lib/campaigns';
+import { campaignSchema, validateFileUpload } from '../../lib/validation';
+import { handleError, ErrorDetails } from '../../lib/errorHandling';
+import { supabase } from '../../lib/supabase';
 
 type CampaignFormData = {
   title: string;
@@ -25,6 +30,8 @@ interface CampaignFormProps {
 
 export function CampaignForm({ initialData }: CampaignFormProps = {}) {
   const { register, handleSubmit, formState: { errors } } = useForm<CampaignFormData>({
+    resolver: zodResolver(campaignSchema),
+    mode: 'onBlur',
     defaultValues: initialData ? {
       title: initialData.title,
       description: initialData.description,
@@ -36,42 +43,69 @@ export function CampaignForm({ initialData }: CampaignFormProps = {}) {
   const [mainImage, setMainImage] = React.useState<File | null>(null);
   const [description, setDescription] = React.useState('');
 
+  const [formError, setFormError] = React.useState<string | null>(null);
+
   const { getRootProps, getInputProps } = useDropzone({
     accept: {
       'image/*': ['.png', '.jpg', '.jpeg', '.gif']
     },
     maxFiles: 1,
-    onDrop: files => setMainImage(files[0])
+    onDrop: acceptedFiles => {
+      const file = acceptedFiles[0];
+      const validationResult = validateFileUpload(file);
+      
+      if (!validationResult.valid) {
+        toast.error(validationResult.error || 'Invalid file');
+        return;
+      }
+      
+      setMainImage(file);
+    }
   });
 
   const onSubmit = async (data: CampaignFormData) => {
+    setFormError(null);
+    
     try {
+      // Sanitize the description HTML (already handled in validation.ts)
+      const sanitizedDescription = description;
+      
       // Handle image upload to Supabase storage
-      let main_image_url = '';
+      let imageUrl = '';
       if (mainImage) {
+        const uploadPath = `${Date.now()}-${mainImage.name}`;
         const { data: uploadData, error: uploadError } = await supabase.storage
           .from('campaign-images')
-          .upload(`${Date.now()}-${mainImage.name}`, mainImage);
+          .upload(uploadPath, mainImage);
 
         if (uploadError) throw uploadError;
-        main_image_url = uploadData.path;
+        imageUrl = uploadData.path;
       }
 
       // Create campaign
       await createCampaign({
         ...data,
-        description,
-        main_image_url,
-        current_amount: 0,
+        description: sanitizedDescription,
+        imageUrl,
+        currentAmount: 0,
       });
 
+      toast.success('Campaign created successfully!');
     } catch (error) {
-      console.error('Error creating campaign:', error);
+      // Use our standardized error handler
+      const errorDetails: ErrorDetails = handleError(error);
+      setFormError(errorDetails.message);
+      toast.error(errorDetails.message);
     }
   };
 
   return (
     <Card className="p-6">
+      {formError && (
+        <div className="mb-4 rounded-md bg-red-50 p-4 text-sm text-red-800">
+          {formError}
+        </div>
+      )}
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
           <label className="block text-sm font-medium text-gray-700">
@@ -83,7 +117,7 @@ export function CampaignForm({ initialData }: CampaignFormProps = {}) {
             className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
           />
           {errors.title && (
-            <p className="mt-1 text-sm text-red-600">Title is required</p>
+            <p className="mt-1 text-sm text-red-600">{errors.title?.message}</p>
           )}
         </div>
 
@@ -143,7 +177,7 @@ export function CampaignForm({ initialData }: CampaignFormProps = {}) {
             />
             {errors.goal_amount && (
               <p className="mt-1 text-sm text-red-600">
-                Goal amount must be greater than 0
+                {errors.goal_amount?.message}
               </p>
             )}
           </div>

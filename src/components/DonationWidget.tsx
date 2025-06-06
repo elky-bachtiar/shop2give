@@ -1,10 +1,13 @@
-import React from 'react';
+import { useState } from 'react';
 import { Share2 } from 'lucide-react';
 import { Button } from './ui/Button';
 import { CircularProgress } from './ui/CircularProgress';
 import { formatCurrency, calculateProgress } from '../lib/utils';
+import { DonationForm } from './DonationForm';
 
 type DonationWidgetProps = {
+  campaignId: string;
+  campaignTitle: string;
   amountRaised: number;
   goal: number;
   donorCount: number;
@@ -15,8 +18,18 @@ type DonationWidgetProps = {
   }>;
 };
 
-export function DonationWidget({ amountRaised, goal, donorCount, donations }: DonationWidgetProps) {
+export function DonationWidget({ campaignId, campaignTitle, amountRaised, goal, donorCount, donations }: DonationWidgetProps) {
   const progress = calculateProgress(amountRaised, goal);
+  const [showDonationForm, setShowDonationForm] = useState(false);
+
+  // Toggle donation form visibility
+  const toggleDonationForm = () => setShowDonationForm(!showDonationForm);
+  
+  // Handle successful donation
+  const handleDonationSuccess = () => {
+    setShowDonationForm(false);
+    // Note: In a real implementation, we would refresh the campaign data
+  };
 
   return (
     <div className="sticky top-24 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -49,15 +62,26 @@ export function DonationWidget({ amountRaised, goal, donorCount, donations }: Do
         </p>
       </div>
 
-      <div className="mb-6 space-y-2">
-        <Button className="w-full" size="lg">
-          Donate now
-        </Button>
-        <Button variant="outline" className="w-full" size="lg">
-          <Share2 className="mr-2 h-4 w-4" />
-          Share
-        </Button>
-      </div>
+      {showDonationForm ? (
+        <div className="mb-6">
+          <DonationForm 
+            campaignId={campaignId}
+            campaignTitle={campaignTitle}
+            onSuccess={handleDonationSuccess}
+            onCancel={() => setShowDonationForm(false)}
+          />
+        </div>
+      ) : (
+        <div className="mb-6 space-y-2">
+          <Button className="w-full" size="lg" onClick={toggleDonationForm}>
+            Donate now
+          </Button>
+          <Button variant="secondary" className="w-full" size="lg">
+            <Share2 className="mr-2 h-4 w-4" />
+            Share
+          </Button>
+        </div>
+      )}
 
       <div className="space-y-4">
         <h4 className="font-semibold text-gray-900">Recent Donations</h4>
@@ -70,10 +94,10 @@ export function DonationWidget({ amountRaised, goal, donorCount, donations }: Do
           ))}
         </div>
         <div className="flex justify-between gap-2">
-          <Button variant="outline" className="flex-1" size="sm">
+          <Button variant="secondary" className="flex-1" size="sm">
             See all
           </Button>
-          <Button variant="outline" className="flex-1" size="sm">
+          <Button variant="secondary" className="flex-1" size="sm">
             See top
           </Button>
         </div>

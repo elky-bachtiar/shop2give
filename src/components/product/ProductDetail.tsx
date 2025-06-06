@@ -223,7 +223,6 @@ const ProductDetail = ({ product }: ProductDetailProps): React.ReactNode => {
               <button 
                 onClick={() => {
                   console.log('Current cart state:', items);
-                  alert(`Current cart has ${items.length} items. Check console for details.`);
                 }}
                 className="text-sm text-gray-500 hover:text-gray-700"
               >

@@ -3,9 +3,6 @@ import { persist } from 'zustand/middleware';
 import { StripeService } from '../api/stripe/payments';
 import { Product } from './products';
 
-// Make sure we have the right console logging for debugging
-console.log('Checkout store initializing');
-
 // Local cart item that contains full product details
 export interface CartItem {
   product: Product;

@@ -15,8 +15,6 @@ export class StripeProductsService {
    */
   static async getAllProducts(): Promise<Product[]> {
     try {
-      console.log('Fetching all products from Stripe via Supabase Function');
-      
       // Use Supabase Functions to call the stripe-get-products endpoint
       const { data, error } = await supabase.functions.invoke('stripe-get-products', {
         body: {}
@@ -32,7 +30,6 @@ export class StripeProductsService {
         throw new Error('Invalid response: missing products data');
       }
       
-      console.log(`Successfully fetched ${data.products.length} products`);
       return data.products.map(this.mapStripeProductToProduct);
     } catch (error) {
       console.error('Fetch Stripe products error:', error);
@@ -145,7 +142,6 @@ export class StripeProductsService {
         throw new Error('Invalid response: missing product data');
       }
       
-      console.log('Successfully created product:', data.product);
       return this.mapStripeProductToProduct(data.product);
     } catch (error) {
       console.error('Create Stripe product error:', error);
