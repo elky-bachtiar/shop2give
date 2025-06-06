@@ -1728,6 +1728,13 @@ CREATE TRIGGER on_auth_user_created
 ---
 ## Implementation details
 
+- Supabase Edge Functions stripe_checkout:
+https://raw.githubusercontent.com/elky-bachtiar/shop2give/refs/heads/main/supabase/functions/stripe-checkout/index.ts
+- Supabase Edge Functions stripe_webhook:
+https://raw.githubusercontent.com/elky-bachtiar/shop2give/refs/heads/main/supabase/functions/stripe-webhook/index.ts
+- Supabase Edge Functions generate-csrf-token:
+https://raw.githubusercontent.com/elky-bachtiar/shop2give/refs/heads/main/supabase/functions/generate-csrf-token/index.ts
+
 This is a basic implementation of a crowdfunding platform. If you miss something according to the prompt above, you need to add tables, views, policies, etc. to the database.
 
 - stripe tables
@@ -1737,5 +1744,5 @@ https://github.com/elky-bachtiar/shop2give/blob/main/supabase/migrations/2025060
 - Logs, webhook_logs, checkout_logs, edge_function_logs, Enable RLS
 https://github.com/elky-bachtiar/shop2give/blob/main/supabase/migrations/20250603104912_proud_tooth.sql
 - campaigns update, products, categories, donations update, orders, order_items, categories seed data, Create RLS Policies
-- user_profiles, creators
+- user_profiles, creators, causes, update products, update orders, payment_splits
 https://github.com/elky-bachtiar/shop2give/blob/main/supabase/migrations/20250604114145_sparkling_coast.sql
