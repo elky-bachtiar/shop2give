@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button.js";
-import { ThemeToggle } from "@/components/ui/theme-toggle.js";
+import { ThemeToggle } from "@/components/theme-toggle.js";
 import { useAuth } from "../../context/auth-context.js";
 
 export function Header() {
