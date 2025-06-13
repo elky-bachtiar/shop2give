@@ -1,0 +1,191 @@
+{
+  "users": [
+    {
+      "id": "admin1",
+      "email": "admin@example.com",
+      "password": "SecurePassword123!",
+      "role": "admin",
+      "firstName": "Admin",
+      "lastName": "User",
+      "displayName": "System Admin",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff",
+      "metadata": {
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "owner_a1",
+      "email": "wildlife.rescue@example.com",
+      "password": "SecurePassword123!",
+      "role": "campaign_manager",
+      "firstName": "Alex",
+      "lastName": "Rivera",
+      "displayName": "Wildlife Rescue Center",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Alex+Rivera&background=27AE60&color=fff",
+      "metadata": {
+        "organization": "Wildlife Rescue Center",
+        "position": "Director",
+        "campaigns": ["a1"],
+        "bio": "Dedicated to rescuing and rehabilitating injured wildlife for over 15 years.",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "owner_a2",
+      "email": "nokill.shelter@example.com",
+      "password": "SecurePassword123!",
+      "role": "campaign_manager",
+      "firstName": "Morgan",
+      "lastName": "Chen",
+      "displayName": "No-Kill Animal Shelter",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Morgan+Chen&background=8E44AD&color=fff",
+      "metadata": {
+        "organization": "No-Kill Animal Shelter",
+        "position": "Veterinarian & Founder",
+        "campaigns": ["a2"],
+        "bio": "Veterinarian with a passion for giving every animal a chance at a loving home.",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "owner_a3",
+      "email": "marine.conservation@example.com",
+      "password": "SecurePassword123!",
+      "role": "campaign_manager",
+      "firstName": "Kai",
+      "lastName": "Mālama",
+      "displayName": "Marine Conservation Initiative",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Kai+Malama&background=2980B9&color=fff",
+      "metadata": {
+        "organization": "Marine Conservation Initiative",
+        "position": "Marine Biologist",
+        "campaigns": ["a3"],
+        "bio": "Marine biologist specializing in endangered species conservation and habitat restoration.",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "owner_env1",
+      "email": "rainforest.alliance@example.com",
+      "password": "SecurePassword123!",
+      "role": "campaign_manager",
+      "firstName": "Lucia",
+      "lastName": "Santos",
+      "displayName": "Amazon Rainforest Alliance",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Lucia+Santos&background=16A085&color=fff",
+      "metadata": {
+        "organization": "Amazon Rainforest Alliance",
+        "position": "Environmental Scientist",
+        "campaigns": ["env1"],
+        "bio": "Working with indigenous communities to protect and restore the Amazon rainforest.",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "owner_env2",
+      "email": "plastic.free.oceans@example.com",
+      "password": "SecurePassword123!",
+      "role": "campaign_manager",
+      "firstName": "Nyoman",
+      "lastName": "Wayan",
+      "displayName": "Plastic Free Oceans",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Nyoman+Wayan&background=3498DB&color=fff",
+      "metadata": {
+        "organization": "Plastic Free Oceans",
+        "position": "Environmental Activist",
+        "campaigns": ["env2"],
+        "bio": "Dedicated to removing plastic pollution from our oceans and coastal areas.",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "donor1",
+      "email": "donor1@example.com",
+      "password": "SecurePassword123!",
+      "role": "user",
+      "firstName": "Jamie",
+      "lastName": "Smith",
+      "displayName": "Jamie Smith",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Jamie+Smith&background=E67E22&color=fff",
+      "metadata": {
+        "donations": [
+          {"campaignId": "a1", "amount": 250, "date": "2023-03-15"},
+          {"campaignId": "env1", "amount": 500, "date": "2023-02-22"}
+        ],
+        "interests": ["wildlife", "environment", "conservation"],
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "donor2",
+      "email": "donor2@example.com",
+      "password": "SecurePassword123!",
+      "role": "user",
+      "firstName": "Taylor",
+      "lastName": "Johnson",
+      "displayName": "Taylor Johnson",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Taylor+Johnson&background=9B59B6&color=fff",
+      "metadata": {
+        "donations": [
+          {"campaignId": "a2", "amount": 150, "date": "2023-04-10"},
+          {"campaignId": "a3", "amount": 300, "date": "2023-01-05"}
+        ],
+        "interests": ["animal welfare", "marine life"],
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "donor3",
+      "email": "donor3@example.com",
+      "password": "SecurePassword123!",
+      "role": "user",
+      "firstName": "Casey",
+      "lastName": "Wong",
+      "displayName": "Casey Wong",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Casey+Wong&background=E74C3C&color=fff",
+      "metadata": {
+        "donations": [
+          {"campaignId": "env2", "amount": 200, "date": "2023-03-28"},
+          {"campaignId": "a1", "amount": 175, "date": "2023-05-02"}
+        ],
+        "interests": ["ocean conservation", "sustainability"],
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "donor4",
+      "email": "donor4@example.com",
+      "password": "SecurePassword123!",
+      "role": "user",
+      "firstName": "Jordan",
+      "lastName": "Patel",
+      "displayName": "Jordan Patel",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Jordan+Patel&background=F1C40F&color=fff",
+      "metadata": {
+        "donations": [
+          {"campaignId": "env1", "amount": 450, "date": "2023-01-30"},
+          {"campaignId": "a2", "amount": 225, "date": "2023-04-15"}
+        ],
+        "interests": ["climate action", "animal rescue"],
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "id": "merchant1",
+      "email": "eco.shop@example.com",
+      "password": "SecurePassword123!",
+      "role": "merchant",
+      "firstName": "Robin",
+      "lastName": "Green",
+      "displayName": "Eco Shop",
+      "avatarUrl": "https://ui-avatars.com/api/?name=Robin+Green&background=27AE60&color=fff",
+      "metadata": {
+        "business": "Eco Shop",
+        "description": "Sustainable and eco-friendly products supporting conservation efforts",
+        "contributionPercentage": 5,
+        "supportedCauses": ["environment", "wildlife"],
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "shop2give-supabase",
+  "version": "1.0.0",
+  "description": "Supabase functions for Shop2Give",
+  "license": "ISC",
+  "author": "Elky Bachtiar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "deno task build",
+    "check": "deno check $(find ./functions -name '*.ts')",
+    "dev": "deno task dev",
+    "clean": "find ./functions -name '*.js' -not -path '*/node_modules/*' | xargs rm -f",
+    "serve": "deno task serve"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
+    "stripe": "^18.2.1"
+  },
+  "devDependencies": {
+    "deno": "^2.3.5",
+    "typescript": "^5.8.3"
+  }
+}

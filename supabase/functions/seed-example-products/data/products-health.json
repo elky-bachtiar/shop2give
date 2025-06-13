@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "campaign_id": "he1",
+      "name": "Handcrafted Wellness Tea Set",
+      "slug": "handcrafted-wellness-tea-set",
+      "description": "Beautiful handmade ceramic tea set created by artisans in health support programs. Includes hand-thrown mug and small teapot with healing herb tea blends sourced from community gardens.",
+      "short_description": "Artisan-made health support tea set",
+      "price": 5500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6580677/pexels-photo-6580677.jpeg",
+      "gallery_images": [],
+      "inventory_count": 30,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 850,
+      "dimensions": {
+        "length": 25,
+        "width": 20,
+        "height": 15,
+        "unit": "cm"
+      },
+      "tags": ["tea set", "health", "handcrafted", "ceramic", "wellness"],
+      "metadata": {
+        "materials": ["locally sourced clay", "lead-free glazes", "organic herbs"],
+        "includes": "Teapot, mug, and two herb tea blends",
+        "artisan_group": "Health Support Ceramics Guild",
+        "care": "Dishwasher safe, but hand washing recommended",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "he1",
+      "name": "Handwoven Meditation Cushion",
+      "slug": "handwoven-meditation-cushion",
+      "description": "Comfortable meditation cushion handwoven by artisans in mental health support programs. The natural fibers and sustainable filling create a supportive seat for mindfulness practices.",
+      "short_description": "Artisan-woven mental wellness support",
+      "price": 4200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4325484/pexels-photo-4325484.jpeg",
+      "gallery_images": [],
+      "inventory_count": 40,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 1200,
+      "dimensions": {
+        "length": 35,
+        "width": 35,
+        "height": 15,
+        "unit": "cm"
+      },
+      "tags": ["cushion", "health", "handwoven", "meditation", "mindfulness"],
+      "metadata": {
+        "materials": ["organic cotton cover", "buckwheat hull filling", "natural dyes"],
+        "cover": "Removable and washable",
+        "artisan_group": "Mental Wellness Textile Collective",
+        "care": "Cover is machine washable, spot clean filling",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "he2",
+      "name": "Handcrafted Aromatherapy Diffuser",
+      "slug": "handcrafted-aromatherapy-diffuser",
+      "description": "Hand-thrown ceramic essential oil diffuser created by artisans in wellness education programs. The beautiful design features a separate water reservoir and tea light heating element for natural aromatic diffusion.",
+      "short_description": "Artisan-made wellness aromatherapy piece",
+      "price": 3800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4047079/pexels-photo-4047079.jpeg",
+      "gallery_images": [],
+      "inventory_count": 35,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 450,
+      "dimensions": {
+        "length": 12,
+        "width": 12,
+        "height": 15,
+        "unit": "cm"
+      },
+      "tags": ["diffuser", "health", "handcrafted", "aromatherapy", "wellness"],
+      "metadata": {
+        "materials": ["locally sourced clay", "lead-free glaze"],
+        "includes": "Ceramic diffuser and tea light candle",
+        "usage": "Add water and 5-10 drops of essential oil, light candle beneath",
+        "artisan_group": "Community Wellness Potters",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

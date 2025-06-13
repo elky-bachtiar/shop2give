@@ -1,0 +1,191 @@
+{
+  "products": [
+    {
+      "campaign_id": "m1",
+      "name": "Handmade Pediatric Oncology Support Bracelet",
+      "slug": "handmade-pediatric-oncology-support-bracelet",
+      "description": "Beautifully crafted support bracelet made by local artisans. Each purchase directly supports the Pediatric Oncology Equipment campaign.",
+      "short_description": "Handcrafted bracelet supporting pediatric cancer care",
+      "price": 2500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5424858/pexels-photo-5424858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5424856/pexels-photo-5424856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/6624862/pexels-photo-6624862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 50,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 20,
+      "dimensions": {
+        "length": 18,
+        "width": 1,
+        "height": 0.5,
+        "unit": "cm"
+      },
+      "tags": ["handmade", "bracelet", "pediatric", "oncology", "support"],
+      "metadata": {
+        "materials": ["recycled beads", "organic cotton cord"],
+        "artisan_group": "City Hospital Volunteers",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "m1",
+      "name": "Pediatric Oncology Awareness T-Shirt",
+      "slug": "pediatric-oncology-awareness-t-shirt",
+      "description": "Hand-printed t-shirt featuring inspirational artwork created by young patients at City Hospital. Each t-shirt purchase contributes directly to new pediatric oncology equipment.",
+      "short_description": "Hand-printed patient-designed awareness t-shirt",
+      "price": 3500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5384423/pexels-photo-5384423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 100,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 65,
+      "weight_grams": 180,
+      "dimensions": {
+        "length": 70,
+        "width": 50,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["tshirt", "handprinted", "pediatric", "oncology", "patient art"],
+      "metadata": {
+        "materials": ["organic cotton"],
+        "sizes_available": ["S", "M", "L", "XL"],
+        "artists": "Children's Cancer Ward Patients",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "m1",
+      "name": "Handcrafted Therapeutic Plush Toy",
+      "slug": "handcrafted-therapeutic-plush-toy",
+      "description": "Soft, huggable plush toy handmade by volunteers for pediatric oncology patients. Each toy is unique and designed to provide comfort during treatment. Your purchase helps fund critical equipment for the children's cancer ward.",
+      "short_description": "Handmade comfort toy for cancer treatment",
+      "price": 3000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6157227/pexels-photo-6157227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4887163/pexels-photo-4887163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 75,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 200,
+      "dimensions": {
+        "length": 25,
+        "width": 15,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["plush", "handmade", "therapeutic", "children", "comfort"],
+      "metadata": {
+        "materials": ["hypoallergenic stuffing", "organic cotton fabric"],
+        "washing_instructions": "Machine washable, gentle cycle",
+        "age_range": "All ages",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "m2",
+      "name": "Dental Care Support Tote Bag",
+      "slug": "dental-care-support-tote-bag",
+      "description": "Hand-screen printed tote bag featuring original artwork supporting dental health awareness. Proceeds help fund our mobile dental clinic serving underserved communities.",
+      "short_description": "Hand-printed dental awareness tote bag",
+      "price": 2000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5706226/pexels-photo-5706226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6044198/pexels-photo-6044198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 150,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 120,
+      "dimensions": {
+        "length": 40,
+        "width": 35,
+        "height": 0.5,
+        "unit": "cm"
+      },
+      "tags": ["tote", "handprinted", "dental", "awareness", "eco-friendly"],
+      "metadata": {
+        "materials": ["organic canvas", "water-based inks"],
+        "artist": "Local Dental Hygienist Association",
+        "washing_instructions": "Hand wash cold",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "m2",
+      "name": "Handcrafted Oral Hygiene Travel Kit",
+      "slug": "handcrafted-oral-hygiene-travel-kit",
+      "description": "Artisan-made travel kit containing eco-friendly bamboo toothbrush, organic toothpaste, and dental floss in a handwoven pouch. Sales support the Mobile Dental Clinic for underserved communities.",
+      "short_description": "Artisanal eco-friendly dental travel kit",
+      "price": 2500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/3737594/pexels-photo-3737594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6692132/pexels-photo-6692132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 100,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 150,
+      "dimensions": {
+        "length": 15,
+        "width": 10,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["oral hygiene", "eco-friendly", "handmade", "travel", "sustainable"],
+      "metadata": {
+        "materials": ["bamboo", "organic cotton", "recycled packaging"],
+        "artisan_group": "Local Sustainable Crafters Cooperative",
+        "sourcing": "Locally and ethically sourced materials",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "m3",
+      "name": "Hand-Knitted Comfort Blanket",
+      "slug": "hand-knitted-comfort-blanket",
+      "description": "Lovingly hand-knitted blanket made by volunteer crafters to provide warmth and comfort to patients in senior care facilities. Each blanket is unique with meticulous attention to detail.",
+      "short_description": "Handmade knitted blanket for senior comfort",
+      "price": 6500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6850551/pexels-photo-6850551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/7180617/pexels-photo-7180617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 30,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 1200,
+      "dimensions": {
+        "length": 150,
+        "width": 100,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["blanket", "handknitted", "comfort", "seniors", "homemade"],
+      "metadata": {
+        "materials": ["hypoallergenic yarn", "cotton blend"],
+        "washing_instructions": "Machine washable, gentle cycle",
+        "artisan_group": "Senior Care Support Knitting Circle",
+        "production_time": "15-20 hours per blanket",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

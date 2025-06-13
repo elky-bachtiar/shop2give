@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "campaign_id": "t1",
+      "name": "Handcrafted Sustainable Phone Stand",
+      "slug": "handcrafted-sustainable-phone-stand",
+      "description": "Beautifully handcrafted wooden phone stand made by artisans trained in digital literacy programs. Each stand is uniquely carved from sustainable wood and features cable management and optimal viewing angles.",
+      "short_description": "Artisan-made eco-friendly device holder",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4050310/pexels-photo-4050310.jpeg",
+      "gallery_images": [],
+      "inventory_count": 65,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 250,
+      "dimensions": {
+        "length": 15,
+        "width": 10,
+        "height": 12,
+        "unit": "cm"
+      },
+      "tags": ["phone stand", "technology", "handcrafted", "wood", "sustainable"],
+      "metadata": {
+        "materials": ["sustainably harvested bamboo", "organic finish"],
+        "fits": "All standard smartphones and small tablets",
+        "features": "Cable management notch, non-slip base",
+        "artisan_group": "Digital Access Woodcrafters",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "t1",
+      "name": "Handwoven Tech Cable Organizer Set",
+      "slug": "handwoven-tech-cable-organizer-set",
+      "description": "Set of five handwoven cable organizers made by artisans in tech education programs. Each organizer uses traditional weaving techniques with modern materials to keep tech cables organized and tangle-free.",
+      "short_description": "Artisan-crafted cord management solution",
+      "price": 1800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/8412350/pexels-photo-8412350.jpeg",
+      "gallery_images": [],
+      "inventory_count": 80,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 50,
+      "dimensions": {
+        "length": 10,
+        "width": 3,
+        "height": 0.5,
+        "unit": "cm"
+      },
+      "tags": ["cable organizer", "technology", "handwoven", "organization", "wearable tech"],
+      "metadata": {
+        "materials": ["recycled nylon cords", "magnetic closures"],
+        "quantity": "Set of 5 organizers",
+        "colors": "Assorted bright colors",
+        "artisan_group": "Tech Education Weaving Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "t2",
+      "name": "Handcrafted Laptop Sleeve with Digital Embroidery",
+      "slug": "handcrafted-laptop-sleeve-digital-embroidery",
+      "description": "Protective laptop sleeve combining traditional handcraft with digital design. The exterior features digitally-designed embroidery created by youth in tech education programs, while the interior provides padded protection.",
+      "short_description": "Artisan-made tech-designed device case",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5926220/pexels-photo-5926220.jpeg",
+      "gallery_images": [],
+      "inventory_count": 40,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 300,
+      "dimensions": {
+        "length": 38,
+        "width": 26,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["laptop sleeve", "technology", "embroidery", "handcrafted", "digital design"],
+      "metadata": {
+        "materials": ["organic cotton canvas", "recycled polyester padding", "digital embroidery"],
+        "fits": "13-15 inch laptops",
+        "closure": "YKK zipper with recycled pull tab",
+        "artisan_group": "Youth Technology Design Guild",
+        "care": "Spot clean only",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

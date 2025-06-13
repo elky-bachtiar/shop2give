@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "campaign_id": "j1",
+      "name": "Handwoven Justice Awareness Bracelet",
+      "slug": "handwoven-justice-awareness-bracelet",
+      "description": "Beautifully handcrafted bracelet made by artisans affected by social injustice. Each unique piece features colored threads symbolizing equality and justice, with an adjustable closure for all wrist sizes.",
+      "short_description": "Artisan-made social justice symbol",
+      "price": 2200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6044244/pexels-photo-6044244.jpeg",
+      "gallery_images": [],
+      "inventory_count": 75,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 15,
+      "dimensions": {
+        "length": 20,
+        "width": 0.8,
+        "height": 0.3,
+        "unit": "cm"
+      },
+      "tags": ["bracelet", "justice", "handwoven", "awareness", "equality"],
+      "metadata": {
+        "materials": ["cotton thread", "recycled metal clasp"],
+        "adjustable": true,
+        "artisan_group": "Justice Access Collective",
+        "care": "Keep dry, avoid chemicals",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "j1",
+      "name": "Hand-Printed Legal Aid Tote Bag",
+      "slug": "hand-printed-legal-aid-tote-bag",
+      "description": "Durable canvas tote bag screen-printed by hand with inspiring justice quotes and symbols. Made by artisans in communities with limited access to legal resources, each bag helps fund legal aid programs.",
+      "short_description": "Artisan-printed justice advocacy bag",
+      "price": 3500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5748688/pexels-photo-5748688.jpeg",
+      "gallery_images": [],
+      "inventory_count": 60,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 250,
+      "dimensions": {
+        "length": 40,
+        "width": 35,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["tote bag", "justice", "handprinted", "legal aid", "advocacy"],
+      "metadata": {
+        "materials": ["organic cotton canvas", "water-based inks"],
+        "capacity": "15 liters",
+        "features": "Inner pocket, reinforced handles",
+        "artisan_group": "Legal Access Print Collective",
+        "care": "Machine washable, cold water",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "j2",
+      "name": "Handcrafted Equality Journal",
+      "slug": "handcrafted-equality-journal",
+      "description": "Hand-bound journal featuring cover art created by formerly incarcerated artists. Inside pages contain inspirational quotes about justice alongside blank pages for reflection or notes. Supports prison reform initiatives.",
+      "short_description": "Artisan-made justice reflection notebook",
+      "price": 3200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6373304/pexels-photo-6373304.jpeg",
+      "gallery_images": [],
+      "inventory_count": 45,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 320,
+      "dimensions": {
+        "length": 21,
+        "width": 15,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["journal", "justice", "handbound", "equality", "reform"],
+      "metadata": {
+        "materials": ["recycled paper", "cotton cover", "vegetable-based inks"],
+        "pages": 120,
+        "binding": "Hand-sewn with exposed spine",
+        "artisan_group": "Second Chance Arts Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

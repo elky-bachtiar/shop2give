@@ -1,0 +1,24 @@
+{
+  "name": "e2e-supabase",
+  "version": "1.0.0",
+  "description": "E2E tests for Supabase Edge Functions and Migrations",
+  "main": "index.js",
+  "scripts": {
+    "start:supabase": "supabase start",
+    "seed:users": "npx tsx scripts/seed-test-users.ts",
+    "test:functions": "npx playwright test check-edge-functions.spec.ts",
+    "test:setup": "npm run start:supabase && npm run seed:users && npm run test:functions",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [],
+  "author": "Elky Bachtiar",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@supabase/supabase-js": "^2.50.0",
+    "@types/node": "^24.0.1",
+    "dotenv": "^16.5.0",
+    "stripe": "^18.2.1"
+  }
+}

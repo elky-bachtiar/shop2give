@@ -1,0 +1,202 @@
+{
+  "products": [
+    {
+      "campaign_id": "e1",
+      "name": "Emergency Preparedness Handbook",
+      "slug": "emergency-preparedness-handbook",
+      "description": "Hand-bound emergency preparedness guide with waterproof pages, created by disaster relief experts. Includes checklists, first aid instructions, and survival tips for various emergency situations.",
+      "short_description": "Handcrafted waterproof emergency guide",
+      "price": 2500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6964115/pexels-photo-6964115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6964117/pexels-photo-6964117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 120,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 250,
+      "dimensions": {
+        "length": 15,
+        "width": 10,
+        "height": 1.5,
+        "unit": "cm"
+      },
+      "tags": ["emergency", "preparedness", "handbook", "survival", "handmade"],
+      "metadata": {
+        "materials": ["waterproof paper", "durable binding", "tear-resistant pages"],
+        "pages": 64,
+        "waterproof": true,
+        "features": "Includes checklists, first-aid instructions, emergency contact templates",
+        "artisan_group": "Emergency Response Volunteers",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "e1",
+      "name": "Hand-Sewn Emergency Blanket",
+      "slug": "hand-sewn-emergency-blanket",
+      "description": "Compact, durable emergency blanket handcrafted from premium thermal fabric. Each blanket is sewn by local artisans and folds into a small pouch for easy storage in emergency kits or vehicles.",
+      "short_description": "Artisan-made compact thermal emergency blanket",
+      "price": 3500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6692145/pexels-photo-6692145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 80,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 400,
+      "dimensions": {
+        "length": 180,
+        "width": 120,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["blanket", "emergency", "thermal", "handmade", "compact"],
+      "metadata": {
+        "materials": ["thermal insulation fabric", "reinforced stitching"],
+        "folded_dimensions": "15 x 10 x 5 cm",
+        "waterproof": true,
+        "machine_washable": true,
+        "artisan_group": "Disaster Relief Sewing Circle",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "e2",
+      "name": "Handcrafted Solar Emergency Light",
+      "slug": "handcrafted-solar-emergency-light",
+      "description": "Hand-assembled solar emergency light with hand-woven protective casing. Features solar charging panel, LED lights with multiple brightness settings, and USB charging port for mobile devices.",
+      "short_description": "Artisan-made solar emergency lighting",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6444584/pexels-photo-6444584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6703423/pexels-photo-6703423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 60,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 60,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 15,
+        "width": 8,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["solar", "emergency", "light", "handcrafted", "sustainable"],
+      "metadata": {
+        "materials": ["recycled plastic components", "handwoven natural fiber casing"],
+        "battery": "2000mAh rechargeable lithium",
+        "charging_methods": "Solar panel, USB",
+        "light_duration": "Up to 12 hours on low setting",
+        "features": "3 brightness levels, SOS mode, USB charging port",
+        "artisan_group": "Sustainable Technology Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "e2",
+      "name": "Embroidered Survivor Stories Quilt",
+      "slug": "embroidered-survivor-stories-quilt",
+      "description": "Beautiful handcrafted quilt featuring embroidered stories and images from disaster survivors. Created by survivors themselves as part of therapeutic recovery programs, each stitch tells a story of resilience and hope.",
+      "short_description": "Survivor-crafted embroidered story quilt",
+      "price": 12000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/2103844/pexels-photo-2103844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/3094339/pexels-photo-3094339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 10,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 1800,
+      "dimensions": {
+        "length": 200,
+        "width": 180,
+        "height": 1,
+        "unit": "cm"
+      },
+      "tags": ["quilt", "embroidery", "survivors", "handmade", "arttherapy"],
+      "metadata": {
+        "materials": ["cotton fabric", "embroidery threads", "batting"],
+        "creation_time": "Approximately 200 hours of work",
+        "care": "Gentle machine wash cold, line dry or tumble dry low",
+        "artisan_group": "Disaster Survivor Healing Collective",
+        "includes": "Documentation of stories featured in the quilt",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "e3",
+      "name": "Hand-Turned Wooden Whistle",
+      "slug": "hand-turned-wooden-whistle",
+      "description": "High-pitch emergency whistle hand-turned from sustainable hardwood. Each whistle is carefully crafted to produce a loud, clear sound that carries over long distances — a critical tool for emergency situations.",
+      "short_description": "Artisan-crafted hardwood emergency whistle",
+      "price": 1800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6044979/pexels-photo-6044979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6044912/pexels-photo-6044912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 150,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 30,
+      "dimensions": {
+        "length": 7,
+        "width": 2,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["whistle", "emergency", "woodturned", "survival", "handcrafted"],
+      "metadata": {
+        "materials": ["sustainably harvested maple or walnut wood", "natural finishes"],
+        "sound_level": "Up to 120 decibels",
+        "water_resistant": true,
+        "lanyard": "Includes handmade paracord lanyard",
+        "artisan_group": "Traditional Woodturners Guild",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "e3",
+      "name": "Handwoven Emergency Supply Bag",
+      "slug": "handwoven-emergency-supply-bag",
+      "description": "Durable, water-resistant emergency supply bag handwoven from recycled materials by local artisans. Features multiple compartments, reflective strips for visibility, and comfortable carrying straps.",
+      "short_description": "Artisan-woven disaster preparedness bag",
+      "price": 5500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/2381996/pexels-photo-2381996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/2381970/pexels-photo-2381970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 40,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 600,
+      "dimensions": {
+        "length": 45,
+        "width": 30,
+        "height": 20,
+        "unit": "cm"
+      },
+      "tags": ["emergency", "bag", "handwoven", "recycled", "preparedness"],
+      "metadata": {
+        "materials": ["recycled canvas", "upcycled seat belts", "waterproof lining"],
+        "capacity": "30 liters",
+        "features": "Multiple compartments, reflective strips, waterproof main section",
+        "artisan_group": "Emergency Preparedness Textile Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

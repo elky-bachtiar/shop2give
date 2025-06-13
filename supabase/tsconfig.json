@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "lib": ["ES2020", "DOM"],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "declaration": false,
+    "allowJs": true,
+    "checkJs": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noEmit": false,
+    "outDir": "./functions",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "ignoreDeprecations": "5.0",
+    "baseUrl": ".",
+    "preserveSymlinks": true
+  },
+  "ts-node": {
+    "transpileOnly": true
+  },
+  "include": [
+    "functions/**/*.ts",
+    "functions/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

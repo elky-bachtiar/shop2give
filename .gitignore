@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+
+# Archive
+Archive.zip
+Archive/*
+
+# Playwright
+node_modules/
+*/**/node_modules/
+/test-results/
+*/**/test-results/
+/playwright-report/
+*/**/playwright-report/
+/blob-report/
+*/**/blob-report/
+/playwright/.cache/
+*/**/playwright/.cache/
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+
+# Archive directory with old files
+Archive/
+.env.test

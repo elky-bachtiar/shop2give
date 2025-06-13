@@ -1,0 +1,19 @@
+{
+  "imports": {
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.50.0",
+    "npm:@supabase/supabase-js@2.49.1": "npm:@supabase/supabase-js@2.50.0",
+    "https://esm.sh/@supabase/supabase-js@2.21.0": "npm:@supabase/supabase-js@2.50.0",
+    "stripe": "npm:stripe@18.2.1",
+    "https://esm.sh/stripe@12.18.0": "npm:stripe@18.2.1",
+    "fs": "node:fs",
+    "path": "node:path",
+    "url": "node:url",
+    "crypto": "node:crypto",
+    "./utils/": "./utils/",
+    "https://deno.land/std@0.177.0/http/server.ts": "https://deno.land/std@0.177.0/http/server.ts",
+    "https://deno.land/std@0.168.0/http/server.ts": "https://deno.land/std@0.168.0/http/server.ts",
+    "../../types/api.js": "./functions/types/api.ts",
+    "../../types/api.ts": "./functions/types/api.ts",
+    "./types.ts": "./types.ts"
+  }
+}

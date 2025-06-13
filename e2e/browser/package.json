@@ -1,0 +1,17 @@
+{
+  "name": "e2e-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Elky Bachtiar",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.1"
+  }
+}

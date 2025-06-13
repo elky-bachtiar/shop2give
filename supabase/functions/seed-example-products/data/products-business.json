@@ -1,0 +1,292 @@
+{
+  "products": [
+    {
+      "campaign_id": "b1",
+      "name": "Handcrafted Small Business Planner",
+      "slug": "handcrafted-small-business-planner",
+      "description": "Beautifully hand-bound business planner with recycled leather cover and specialized pages for small business planning. Created by artisan bookbinders to support local entrepreneurship programs.",
+      "short_description": "Artisan-bound small business organizer",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6192355/pexels-photo-6192355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6192364/pexels-photo-6192364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 45,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 60,
+      "weight_grams": 650,
+      "dimensions": {
+        "length": 25,
+        "width": 18,
+        "height": 3,
+        "unit": "cm"
+      },
+      "tags": ["planner", "business", "handbound", "entrepreneur", "organizer"],
+      "metadata": {
+        "materials": ["recycled leather", "acid-free paper", "organic cotton thread"],
+        "pages": 180,
+        "sections": ["Goals", "Finances", "Marketing", "Weekly Plans", "Notes"],
+        "artisan_group": "Urban Bookbinding Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b1",
+      "name": "Entrepreneur Support Coffee Gift Set",
+      "slug": "entrepreneur-support-coffee-gift-set",
+      "description": "Handcrafted gift set featuring locally roasted coffee beans, ceramic mug made by small business owners, and artisanal coffee treats. Perfect for the busy entrepreneur while supporting local business development.",
+      "short_description": "Local artisan business coffee package",
+      "price": 3800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6306286/pexels-photo-6306286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6542300/pexels-photo-6542300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 30,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 65,
+      "weight_grams": 800,
+      "dimensions": {
+        "length": 30,
+        "width": 25,
+        "height": 15,
+        "unit": "cm"
+      },
+      "tags": ["coffee", "gift set", "business", "handmade", "local"],
+      "metadata": {
+        "materials": ["locally roasted coffee", "handmade ceramic", "recycled packaging"],
+        "includes": "12oz coffee bag, handmade ceramic mug, artisan biscotti",
+        "coffee_origin": "Fair trade, single-origin",
+        "artisan_groups": ["Local Coffee Roasters Cooperative", "Community Ceramic Studio"],
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b1",
+      "name": "Handwoven Business Card Holder",
+      "slug": "handwoven-business-card-holder",
+      "description": "Elegant business card holder handwoven from sustainable materials by artisans trained through our small business development programs. Each unique piece makes networking more memorable.",
+      "short_description": "Artisan-crafted sustainable card case",
+      "price": 2200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5745241/pexels-photo-5745241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5745237/pexels-photo-5745237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 75,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 60,
+      "dimensions": {
+        "length": 10,
+        "width": 6,
+        "height": 1.5,
+        "unit": "cm"
+      },
+      "tags": ["business card", "handwoven", "sustainable", "professional", "unique"],
+      "metadata": {
+        "materials": ["grass fibers", "recycled cotton", "natural dyes"],
+        "capacity": "15-20 standard business cards",
+        "care": "Wipe clean with damp cloth",
+        "artisan_group": "Rural Economic Development Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b2",
+      "name": "Youth Entrepreneur Handmade Notebook Set",
+      "slug": "youth-entrepreneur-handmade-notebook-set",
+      "description": "Set of three pocket-sized notebooks with hand-decorated covers, created by youth entrepreneurs learning business skills. Each set represents the creativity and determination of young people starting their business journey.",
+      "short_description": "Youth business program handcraft notebooks",
+      "price": 1800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5238117/pexels-photo-5238117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5238640/pexels-photo-5238640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 100,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 150,
+      "dimensions": {
+        "length": 14,
+        "width": 9,
+        "height": 1,
+        "unit": "cm"
+      },
+      "tags": ["notebook", "youth", "entrepreneur", "handmade", "education"],
+      "metadata": {
+        "materials": ["recycled paper", "hand-decorated covers"],
+        "pages": "48 pages per notebook",
+        "designs": ["Ideas", "Goals", "Action Plans"],
+        "creator_group": "Youth Business Education Program",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b2",
+      "name": "Tech Startup Support Desk Organizer",
+      "slug": "tech-startup-support-desk-organizer",
+      "description": "Handcrafted wooden desk organizer created by vocational training participants. Features phone stand, pen holder, and small compartments - perfect for keeping a startup workspace tidy and organized.",
+      "short_description": "Artisan-made workspace organization solution",
+      "price": 3500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5710511/pexels-photo-5710511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 40,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 750,
+      "dimensions": {
+        "length": 30,
+        "width": 15,
+        "height": 12,
+        "unit": "cm"
+      },
+      "tags": ["desk", "organizer", "handcrafted", "wooden", "startup"],
+      "metadata": {
+        "materials": ["sustainable bamboo", "reclaimed wood", "natural finish"],
+        "compartments": 5,
+        "features": "Phone stand, pen holder, cable management",
+        "artisan_group": "Technical Skills Workshop",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b2",
+      "name": "Entrepreneur Inspiration Handmade Wall Art",
+      "slug": "entrepreneur-inspiration-handmade-wall-art",
+      "description": "Motivational wall art handcrafted from reclaimed materials, featuring inspiring business quotes. Created by artists participating in entrepreneurship training programs to decorate your office or workspace.",
+      "short_description": "Artisan-created business motivation decor",
+      "price": 5000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/1105386/pexels-photo-1105386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/3697742/pexels-photo-3697742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 25,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 60,
+      "weight_grams": 1200,
+      "dimensions": {
+        "length": 40,
+        "width": 30,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["wall art", "inspiration", "business", "handmade", "office"],
+      "metadata": {
+        "materials": ["reclaimed wood", "recycled metal", "eco-friendly paints"],
+        "hanging_hardware": "Included",
+        "quotes_available": ["Dream Big", "Hustle", "Build the Future", "Create Value"],
+        "artisan_group": "Business Arts Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b3",
+      "name": "Handcrafted Workspace Wellness Kit",
+      "slug": "handcrafted-workspace-wellness-kit",
+      "description": "Complete wellness kit for busy professionals featuring handmade items to promote well-being during the workday. Includes aromatherapy diffuser, stress-relief balm, and other artisan-crafted wellness items.",
+      "short_description": "Artisan-made office wellness products",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6621471/pexels-photo-6621471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6621463/pexels-photo-6621463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 35,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 65,
+      "weight_grams": 850,
+      "dimensions": {
+        "length": 25,
+        "width": 20,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["wellness", "workspace", "handcrafted", "aromatherapy", "self-care"],
+      "metadata": {
+        "materials": ["ceramic diffuser", "organic essential oils", "beeswax", "coconut oil"],
+        "includes": "Handmade ceramic diffuser, stress-relief balm, desk yoga guide, tea blend",
+        "artisan_group": "Wellness Crafters Cooperative",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b3",
+      "name": "Community Business Support Laptop Sleeve",
+      "slug": "community-business-support-laptop-sleeve",
+      "description": "Handwoven protective laptop sleeve made by local artisans using traditional techniques with modern designs. Padded for protection, this beautiful accessory keeps your tech safe while supporting community business initiatives.",
+      "short_description": "Artisan-woven protective device case",
+      "price": 3800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5816283/pexels-photo-5816283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5816285/pexels-photo-5816285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 50,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 300,
+      "dimensions": {
+        "length": 38,
+        "width": 26,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["laptop sleeve", "handwoven", "business", "tech", "traditional"],
+      "metadata": {
+        "materials": ["hand-loomed fabric", "organic cotton padding", "vegetable-tanned leather closure"],
+        "fits": "13-14 inch laptops",
+        "features": "Padded protection, secure closure, outside pocket",
+        "artisan_group": "Community Textile Cooperative",
+        "care": "Spot clean with mild soap and water",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "b3",
+      "name": "Hand-Thrown Ceramic Business Card Holder",
+      "slug": "hand-thrown-ceramic-business-card-holder",
+      "description": "Elegant ceramic business card holder wheel-thrown by artisans in our vocational training program. Each piece is uniquely glazed and finished to add a handcrafted touch to any desk or reception area.",
+      "short_description": "Artisan-made ceramic desktop accessory",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5748965/pexels-photo-5748965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5749007/pexels-photo-5749007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 60,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 12,
+        "width": 7,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["ceramic", "business card", "handmade", "desk accessory", "pottery"],
+      "metadata": {
+        "materials": ["locally sourced clay", "lead-free glazes"],
+        "capacity": "25-30 standard business cards",
+        "colors_available": ["Blue", "Green", "Earth tone"],
+        "artisan_group": "Business Development Pottery Studio",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

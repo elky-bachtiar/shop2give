@@ -1,0 +1,58 @@
+{
+  "nodeModulesDir": "auto",
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES2020",
+    "outDir": "./dist",
+    "module": "ES2020",
+    "noEmit": false
+  },
+  "lint": {
+    "files": {
+      "include": [
+        "**/*.ts"
+      ]
+    },
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "exclude": [
+        "no-explicit-any",
+        "require-await"
+      ]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": [
+        "**/*.ts"
+      ]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 100,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  "importMap": "./import_map.json",
+  "tasks": {
+    "build": "./build.sh",
+    "clean": "find ./functions -name '*.js' -not -path '*/node_modules/*' | xargs rm -f",
+    "dev": "deno task serve",
+    "test": "deno test --allow-all",
+    "serve": "supabase functions serve --no-verify-jwt"
+  }
+}
