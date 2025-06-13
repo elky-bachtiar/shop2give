@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "campaign_id": "ac1",
+      "name": "Handcrafted Local Culture Ceramic Mug",
+      "slug": "handcrafted-local-culture-ceramic-mug",
+      "description": "Unique ceramic mug handcrafted by local artisans featuring traditional cultural designs. Each mug is wheel-thrown and hand-painted, supporting arts education programs in the community.",
+      "short_description": "Artisan-made cultural design drinkware",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg",
+      "gallery_images": [],
+      "inventory_count": 50,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 8,
+        "width": 8,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["ceramic", "handcrafted", "cultural", "arts", "mug"],
+      "metadata": {
+        "materials": ["locally sourced clay", "lead-free glazes"],
+        "capacity": "350ml",
+        "artisan_group": "Cultural Arts Collective",
+        "care": "Dishwasher and microwave safe",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "ac1",
+      "name": "Traditional Woven Wall Hanging",
+      "slug": "traditional-woven-wall-hanging",
+      "description": "Beautifully handwoven wall hanging created using traditional techniques passed down through generations. Each piece supports preservation of cultural heritage and arts education.",
+      "short_description": "Artisan-woven cultural wall art",
+      "price": 6500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6045028/pexels-photo-6045028.jpeg",
+      "gallery_images": [],
+      "inventory_count": 25,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 500,
+      "dimensions": {
+        "length": 60,
+        "width": 45,
+        "height": 1,
+        "unit": "cm"
+      },
+      "tags": ["wall hanging", "handwoven", "cultural", "textile", "artisan"],
+      "metadata": {
+        "materials": ["natural wool", "cotton", "natural dyes"],
+        "hanging_hardware": "Included",
+        "artisan_group": "Heritage Weavers Guild",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "ac2",
+      "name": "Handcarved Cultural Music Instrument",
+      "slug": "handcarved-cultural-music-instrument",
+      "description": "Traditional percussion instrument handcrafted by master artisans using time-honored techniques. Each instrument produces authentic sounds while supporting cultural music preservation.",
+      "short_description": "Artisan-made traditional instrument",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6647555/pexels-photo-6647555.jpeg",
+      "gallery_images": [],
+      "inventory_count": 20,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 750,
+      "dimensions": {
+        "length": 30,
+        "width": 30,
+        "height": 15,
+        "unit": "cm"
+      },
+      "tags": ["music", "instrument", "handcrafted", "cultural", "percussion"],
+      "metadata": {
+        "materials": ["sustainable hardwood", "natural animal hide", "natural fiber"],
+        "includes": "Instrument and playing guide",
+        "artisan_group": "Traditional Music Preservationists",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

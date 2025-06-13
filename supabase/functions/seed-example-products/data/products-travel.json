@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "campaign_id": "tr1",
+      "name": "Handcrafted Sustainable Travel Journal",
+      "slug": "handcrafted-sustainable-travel-journal",
+      "description": "Beautiful hand-bound travel journal made with recycled paper and eco-friendly materials by local artisans. Features sections for trip planning, daily entries, and souvenir storage while supporting sustainable tourism initiatives.",
+      "short_description": "Artisan-made ecotourism planner",
+      "price": 3500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6192359/pexels-photo-6192359.jpeg",
+      "gallery_images": [],
+      "inventory_count": 50,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 21,
+        "width": 15,
+        "height": 2.5,
+        "unit": "cm"
+      },
+      "tags": ["journal", "travel", "handcrafted", "sustainable", "tourism"],
+      "metadata": {
+        "materials": ["recycled paper", "vegetable-tanned leather cover", "natural inks"],
+        "pages": 160,
+        "features": "Maps, planning sections, ticket holders, photo corners",
+        "artisan_group": "Sustainable Tourism Bookbinding Guild",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "tr1",
+      "name": "Handwoven Travel Accessories Organizer",
+      "slug": "handwoven-travel-accessories-organizer",
+      "description": "Compact travel organizer handwoven from sustainable materials by artisans in tourism-dependent communities. Features multiple compartments for tech accessories, toiletries, and travel essentials.",
+      "short_description": "Artisan-made travel organization pouch",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5816283/pexels-photo-5816283.jpeg",
+      "gallery_images": [],
+      "inventory_count": 65,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 150,
+      "dimensions": {
+        "length": 25,
+        "width": 20,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["organizer", "travel", "handwoven", "accessories", "sustainable"],
+      "metadata": {
+        "materials": ["locally grown cotton", "natural fiber cordage", "water-resistant lining"],
+        "compartments": 6,
+        "features": "Roll-up design, secure closure, hanging loop",
+        "artisan_group": "Tourism Community Textile Collective",
+        "care": "Spot clean or gentle machine wash",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "tr2",
+      "name": "Handcarved Destination Map Wall Art",
+      "slug": "handcarved-destination-map-wall-art",
+      "description": "Beautifully hand-carved wooden map of popular travel destinations created by artisans in tourism-dependent regions. Each piece features topographical details and can be personalized with pins marking visited locations.",
+      "short_description": "Artisan-crafted travel memory display",
+      "price": 8500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/697662/pexels-photo-697662.jpeg",
+      "gallery_images": [],
+      "inventory_count": 20,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 2500,
+      "dimensions": {
+        "length": 80,
+        "width": 50,
+        "height": 3,
+        "unit": "cm"
+      },
+      "tags": ["map", "travel", "handcarved", "wall art", "destination"],
+      "metadata": {
+        "materials": ["sustainable hardwood", "natural finish", "cork inserts"],
+        "mounting": "Keyhole hangers installed",
+        "includes": "Set of 10 marking pins",
+        "customization": "Can be ordered with specific regions highlighted",
+        "artisan_group": "Tourism Recovery Woodcraft Cooperative",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

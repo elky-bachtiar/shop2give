@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "campaign_id": "sc1",
+      "name": "Handcrafted Science Education Kit",
+      "slug": "handcrafted-science-education-kit",
+      "description": "Educational science kit featuring handcrafted wooden experimental apparatus made by artisans working with science education programs. Designed to teach fundamental physics principles with sustainable materials.",
+      "short_description": "Artisan-made educational science tools",
+      "price": 4800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5427671/pexels-photo-5427671.jpeg",
+      "gallery_images": [],
+      "inventory_count": 35,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 850,
+      "dimensions": {
+        "length": 30,
+        "width": 25,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["science", "education", "handcrafted", "kit", "physics"],
+      "metadata": {
+        "materials": ["sustainably harvested wood", "non-toxic finishes", "recycled packaging"],
+        "experiments": ["Simple Machines", "Gravity", "Motion"],
+        "age_range": "8+ years",
+        "artisan_group": "Science Education Woodcraft Guild",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "sc1",
+      "name": "Handwoven Research Support Backpack",
+      "slug": "handwoven-research-support-backpack",
+      "description": "Durable field research backpack handwoven from sustainable materials by artisans working with conservation scientists. Features specialized compartments for field equipment and weather-resistant design.",
+      "short_description": "Artisan-crafted scientific field pack",
+      "price": 6500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/1546001/pexels-photo-1546001.jpeg",
+      "gallery_images": [],
+      "inventory_count": 25,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 65,
+      "weight_grams": 950,
+      "dimensions": {
+        "length": 45,
+        "width": 35,
+        "height": 20,
+        "unit": "cm"
+      },
+      "tags": ["backpack", "research", "handwoven", "field", "conservation"],
+      "metadata": {
+        "materials": ["water-resistant canvas", "vegetable-tanned leather", "recycled nylon straps"],
+        "capacity": "28 liters",
+        "features": "Laptop sleeve, equipment loops, hidden security pocket",
+        "artisan_group": "Conservation Research Support Cooperative",
+        "care": "Spot clean, weatherproof annually",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "sc2",
+      "name": "Hand-Blown Laboratory Glassware Art",
+      "slug": "hand-blown-laboratory-glassware-art",
+      "description": "Decorative hand-blown glass piece inspired by scientific laboratory equipment, created by artisans working with science education programs. Combines art and science in a beautiful display piece.",
+      "short_description": "Artisan-crafted science-inspired decor",
+      "price": 8500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg",
+      "gallery_images": [],
+      "inventory_count": 15,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 750,
+      "dimensions": {
+        "length": 25,
+        "width": 15,
+        "height": 30,
+        "unit": "cm"
+      },
+      "tags": ["glassware", "science", "handblown", "art", "laboratory"],
+      "metadata": {
+        "materials": ["borosilicate glass", "recycled glass components"],
+        "display": "Can be used for propagating plants or purely decorative",
+        "care": "Hand wash only with mild soap, if using for plants",
+        "artisan_group": "Science Art Glass Studio",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

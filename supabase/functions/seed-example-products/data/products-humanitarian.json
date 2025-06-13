@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "campaign_id": "h1",
+      "name": "Global Solidarity Handwoven Basket",
+      "slug": "global-solidarity-handwoven-basket",
+      "description": "Beautifully handwoven basket created by artisans in refugee communities. Each basket combines traditional weaving techniques with contemporary designs, creating functional art that supports humanitarian aid programs.",
+      "short_description": "Artisan-crafted refugee support basket",
+      "price": 4200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4207793/pexels-photo-4207793.jpeg",
+      "gallery_images": [],
+      "inventory_count": 35,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 450,
+      "dimensions": {
+        "length": 30,
+        "width": 30,
+        "height": 25,
+        "unit": "cm"
+      },
+      "tags": ["basket", "humanitarian", "handwoven", "refugee", "solidarity"],
+      "metadata": {
+        "materials": ["locally sourced grasses", "natural dyes", "recycled plastic accents"],
+        "uses": "Storage, decor, organization",
+        "artisan_group": "New Beginnings Weaving Cooperative",
+        "care": "Spot clean with damp cloth",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "h1",
+      "name": "Aid Worker Support Handmade Soap Set",
+      "slug": "aid-worker-support-handmade-soap-set",
+      "description": "Set of four handcrafted soaps made using traditional methods by artisans in post-conflict regions. Each soap features natural ingredients and essential oils, creating a nurturing self-care experience while supporting humanitarian initiatives.",
+      "short_description": "Artisan-made natural humanitarian soap",
+      "price": 2500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6621354/pexels-photo-6621354.jpeg",
+      "gallery_images": [],
+      "inventory_count": 60,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 400,
+      "dimensions": {
+        "length": 15,
+        "width": 15,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["soap", "humanitarian", "handmade", "natural", "aid"],
+      "metadata": {
+        "materials": ["organic plant oils", "essential oils", "botanical elements"],
+        "scents": ["Lavender & Rosemary", "Citrus & Mint", "Honey & Oatmeal", "Unscented"],
+        "artisan_group": "Peace Valley Soap Makers",
+        "care": "Store in a dry place between uses",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "h2",
+      "name": "Disaster Relief Awareness Candle",
+      "slug": "disaster-relief-awareness-candle",
+      "description": "Hand-poured soy wax candle created by artisans in regions recovering from natural disasters. Each candle features essential oils inspired by resilience and hope, with a sustainable container that can be repurposed.",
+      "short_description": "Artisan-made disaster recovery support candle",
+      "price": 3200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6044625/pexels-photo-6044625.jpeg",
+      "gallery_images": [],
+      "inventory_count": 50,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 8,
+        "width": 8,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["candle", "humanitarian", "handpoured", "relief", "sustainable"],
+      "metadata": {
+        "materials": ["100% soy wax", "essential oils", "recycled glass container"],
+        "burn_time": "Approximately 50 hours",
+        "scent": "Uplifting blend of citrus and herbs",
+        "artisan_group": "Rebuild & Recover Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

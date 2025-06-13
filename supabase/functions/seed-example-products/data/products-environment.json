@@ -1,0 +1,197 @@
+{
+  "products": [
+    {
+      "campaign_id": "env1",
+      "name": "Upcycled Plastic Tote Bag",
+      "slug": "upcycled-plastic-tote-bag",
+      "description": "Handcrafted tote bag woven from recycled plastic bags by local artisans. Each bag diverts approximately 30-50 plastic bags from landfills and creates meaningful employment for community members.",
+      "short_description": "Handwoven bag from recycled plastic",
+      "price": 3200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5747057/pexels-photo-5747057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5747135/pexels-photo-5747135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 45,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 300,
+      "dimensions": {
+        "length": 40,
+        "width": 36,
+        "height": 12,
+        "unit": "cm"
+      },
+      "tags": ["upcycled", "recycled", "plastic", "tote", "handwoven"],
+      "metadata": {
+        "materials": ["recycled plastic bags", "recycled zippers"],
+        "impact": "Diverts 30-50 plastic bags from landfills per product",
+        "artisan_group": "Community Waste Reduction Collective",
+        "care": "Hand wash in cold water, air dry",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "env1",
+      "name": "Native Tree Seed Starter Kit",
+      "slug": "native-tree-seed-starter-kit",
+      "description": "Handmade seed starter kit featuring native tree species for your region. Each kit includes handcrafted biodegradable pots, organic soil discs, seeds, and bamboo plant markers with educational cards.",
+      "short_description": "Handcrafted kit for growing native trees",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4505447/pexels-photo-4505447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4505170/pexels-photo-4505170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 75,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 400,
+      "dimensions": {
+        "length": 25,
+        "width": 15,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["seeds", "native", "reforestation", "gardening", "handmade"],
+      "metadata": {
+        "materials": ["biodegradable fiber pots", "organic soil", "native seeds", "bamboo markers"],
+        "contains": "5 seed varieties, biodegradable pots, organic soil discs, bamboo markers",
+        "artisan_group": "Local Conservation Volunteers",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "env2",
+      "name": "Beeswax Food Wraps Set",
+      "slug": "beeswax-food-wraps-set",
+      "description": "Handcrafted reusable food wraps made with organic cotton, local beeswax, tree resin, and plant oils. Set of 3 different sizes to replace plastic wrap and reduce single-use plastic waste.",
+      "short_description": "Handmade eco-friendly food preservation wraps",
+      "price": 2500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5418899/pexels-photo-5418899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5418558/pexels-photo-5418558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 100,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 65,
+      "weight_grams": 120,
+      "dimensions": {
+        "length": 30,
+        "width": 30,
+        "height": 0.2,
+        "unit": "cm"
+      },
+      "tags": ["beeswax", "reusable", "zerowaste", "handmade", "sustainable"],
+      "metadata": {
+        "materials": ["organic cotton", "locally sourced beeswax", "tree resin", "plant oils"],
+        "set_includes": "Small (8\"x8\"), Medium (10\"x10\"), Large (12\"x14\")",
+        "care": "Rinse in cold water with mild soap, air dry",
+        "lifespan": "6-12 months with proper care",
+        "artisan_group": "Zero Waste Workshop Group",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "env2",
+      "name": "Bird Sanctuary Pottery Bowl",
+      "slug": "bird-sanctuary-pottery-bowl",
+      "description": "Wheel-thrown stoneware bird bath/feeder bowl handcrafted by local ceramicists. Each uniquely glazed piece helps birds thrive while supporting our urban wildlife habitat project.",
+      "short_description": "Handcrafted ceramic bird feeder bowl",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4207891/pexels-photo-4207891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4207908/pexels-photo-4207908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 35,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 900,
+      "dimensions": {
+        "length": 25,
+        "width": 25,
+        "height": 8,
+        "unit": "cm"
+      },
+      "tags": ["ceramics", "handmade", "birds", "wildlife", "pottery"],
+      "metadata": {
+        "materials": ["locally sourced clay", "lead-free glaze"],
+        "care": "Dishwasher safe, weather-resistant",
+        "usage": "Can be used as bird bath, feeder, or decorative bowl",
+        "artisan_group": "Community Pottery Studio",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "env3",
+      "name": "Ocean Cleanup Awareness Bracelet",
+      "slug": "ocean-cleanup-awareness-bracelet",
+      "description": "Handcrafted bracelet made from reclaimed fishing nets and marine plastic debris. Each bracelet represents approximately one pound of ocean plastic removed from coastal areas and transformed into wearable art.",
+      "short_description": "Bracelet created from reclaimed ocean plastic",
+      "price": 1800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/12196642/pexels-photo-12196642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 120,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 15,
+      "dimensions": {
+        "length": 20,
+        "width": 0.8,
+        "height": 0.5,
+        "unit": "cm"
+      },
+      "tags": ["bracelet", "ocean", "recycled", "plastic", "handcrafted"],
+      "metadata": {
+        "materials": ["recycled fishing nets", "reclaimed marine plastics"],
+        "impact": "1 lb of ocean plastic removed per bracelet",
+        "waterproof": true,
+        "adjustable": true,
+        "artisan_group": "Coastal Conservation Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "env3",
+      "name": "Handcarved Bamboo Utensil Set",
+      "slug": "handcarved-bamboo-utensil-set",
+      "description": "Set of handcarved bamboo utensils including fork, knife, spoon, and chopsticks in a handstitched cotton pouch. Perfect for reducing single-use plastic while dining on the go.",
+      "short_description": "Hand-carved sustainable bamboo dining set",
+      "price": 2200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5765/table-furniture-kitchen-wood.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6996366/pexels-photo-6996366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 80,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 100,
+      "dimensions": {
+        "length": 22,
+        "width": 7,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["bamboo", "utensils", "sustainable", "handcarved", "zerowaste"],
+      "metadata": {
+        "materials": ["sustainably harvested bamboo", "organic cotton pouch"],
+        "care": "Hand wash with mild soap, air dry, condition with mineral oil occasionally",
+        "set_includes": "Fork, knife, spoon, chopsticks, cotton carry pouch",
+        "artisan_group": "Sustainable Living Artisan Collective",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

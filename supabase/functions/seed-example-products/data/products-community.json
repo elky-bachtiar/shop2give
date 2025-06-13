@@ -1,0 +1,197 @@
+{
+  "products": [
+    {
+      "campaign_id": "c1",
+      "name": "Community Garden Handcrafted Plant Markers",
+      "slug": "community-garden-handcrafted-plant-markers",
+      "description": "Beautiful hand-painted stone plant markers created by local artists. Each set contains 6 markers, perfect for identifying plants in your garden while supporting community garden initiatives.",
+      "short_description": "Hand-painted stone plant markers for gardens",
+      "price": 2500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5748908/pexels-photo-5748908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4947876/pexels-photo-4947876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 60,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 800,
+      "dimensions": {
+        "length": 15,
+        "width": 10,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["garden", "handpainted", "stones", "community", "sustainable"],
+      "metadata": {
+        "materials": ["natural river stones", "eco-friendly paint", "sealant"],
+        "contents": "Set of 6 markers",
+        "artist_group": "Local Art Therapy Group",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "c1",
+      "name": "Community Cookbook",
+      "slug": "community-cookbook",
+      "description": "Hand-assembled cookbook featuring favorite recipes from members of our community. Each book is individually bound with a handmade cover. Proceeds support the development of community garden spaces.",
+      "short_description": "Hand-bound community recipe collection",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4551154/pexels-photo-4551154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4551130/pexels-photo-4551130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 100,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 21,
+        "width": 15,
+        "height": 2,
+        "unit": "cm"
+      },
+      "tags": ["cookbook", "handbound", "recipes", "community", "local"],
+      "metadata": {
+        "materials": ["recycled paper", "fabric cover", "vegetable-based inks"],
+        "pages": 86,
+        "recipes": 45,
+        "contributors": "Local community members",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "c2",
+      "name": "Neighborhood Festival T-Shirt",
+      "slug": "neighborhood-festival-t-shirt",
+      "description": "Limited edition hand-screen printed t-shirt designed by local youth artists for our annual neighborhood festival. Each purchase helps fund public art installations in underserved areas.",
+      "short_description": "Hand-printed festival t-shirt by youth artists",
+      "price": 3000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5081921/pexels-photo-5081921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5081873/pexels-photo-5081873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 150,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 65,
+      "weight_grams": 180,
+      "dimensions": {
+        "length": 70,
+        "width": 50,
+        "height": 1,
+        "unit": "cm"
+      },
+      "tags": ["tshirt", "handprinted", "festival", "community", "youth art"],
+      "metadata": {
+        "materials": ["organic cotton", "water-based inks"],
+        "sizes_available": ["S", "M", "L", "XL", "XXL"],
+        "artist_group": "Youth Art Collective",
+        "washing_instructions": "Machine wash cold, inside out",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "c2",
+      "name": "Handwoven Community Center Throw Pillow",
+      "slug": "handwoven-community-center-throw-pillow",
+      "description": "Beautiful throw pillow with handwoven cover made by senior artisans at the community center. Each unique design represents the diversity and creativity of our neighborhood.",
+      "short_description": "Senior artisan-woven decorative pillow",
+      "price": 4500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6373307/pexels-photo-6373307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6186523/pexels-photo-6186523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 40,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 400,
+      "dimensions": {
+        "length": 45,
+        "width": 45,
+        "height": 15,
+        "unit": "cm"
+      },
+      "tags": ["pillow", "handwoven", "home decor", "senior artisans", "community"],
+      "metadata": {
+        "materials": ["natural cotton", "reclaimed textiles"],
+        "includes": "Pillow insert and removable cover",
+        "care": "Spot clean or dry clean cover",
+        "artisan_group": "Senior Center Weaving Circle",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "c3",
+      "name": "Youth Center Handmade Ceramic Mug",
+      "slug": "youth-center-handmade-ceramic-mug",
+      "description": "Hand-thrown ceramic mug created by teenagers in the youth center's pottery program. Each mug is unique with glazes mixed and applied by the students themselves.",
+      "short_description": "Teen-crafted ceramic mug supporting youth programs",
+      "price": 2800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/3683328/pexels-photo-3683328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 75,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 10,
+        "width": 8,
+        "height": 12,
+        "unit": "cm"
+      },
+      "tags": ["mug", "ceramic", "handmade", "pottery", "youth"],
+      "metadata": {
+        "materials": ["locally sourced clay", "lead-free glazes"],
+        "capacity": "12 oz",
+        "microwave_safe": true,
+        "dishwasher_safe": true,
+        "artist_group": "Youth Center Pottery Workshop",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "c3",
+      "name": "Community Art Project Jigsaw Puzzle",
+      "slug": "community-art-project-jigsaw-puzzle",
+      "description": "500-piece jigsaw puzzle featuring artwork created during our community mural project. Puzzle pieces are precision-cut from recycled materials by local crafters.",
+      "short_description": "Locally produced puzzle of community artwork",
+      "price": 3200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/3865903/pexels-photo-3865903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5333542/pexels-photo-5333542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 80,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 600,
+      "dimensions": {
+        "length": 25,
+        "width": 25,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["puzzle", "community art", "local", "handcrafted", "mural"],
+      "metadata": {
+        "materials": ["recycled cardboard", "eco-friendly inks"],
+        "pieces": 500,
+        "difficulty": "Medium",
+        "finished_size": "45 x 60 cm",
+        "artist_group": "Community Mural Project Participants",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}

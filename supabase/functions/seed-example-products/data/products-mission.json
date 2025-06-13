@@ -1,0 +1,201 @@
+{
+  "products": [
+    {
+      "campaign_id": "mi1",
+      "name": "Handwoven Fair Trade Market Basket",
+      "slug": "handwoven-fair-trade-market-basket",
+      "description": "Traditional market basket handwoven by artisans from rural communities. Each basket supports fair wages and sustainable livelihoods for families in regions where our mission operates.",
+      "short_description": "Fair trade handwoven market tote",
+      "price": 3800,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/4207805/pexels-photo-4207805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/4226863/pexels-photo-4226863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 50,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 75,
+      "weight_grams": 600,
+      "dimensions": {
+        "length": 45,
+        "width": 30,
+        "height": 25,
+        "unit": "cm"
+      },
+      "tags": ["basket", "handwoven", "fairtrade", "sustainable", "market"],
+      "metadata": {
+        "materials": ["locally harvested elephant grass", "leather handles"],
+        "artisan_group": "Women's Weaving Cooperative",
+        "origin": "Northern Ghana",
+        "care": "Wipe clean with damp cloth, reshape when needed",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "mi1",
+      "name": "Hand-Embroidered Mission Scarf",
+      "slug": "hand-embroidered-mission-scarf",
+      "description": "Delicate cotton scarf featuring intricate hand embroidery by women artisans. Each purchase provides sustainable income for women in communities where our mission works to provide educational opportunities.",
+      "short_description": "Artisan-embroidered cotton accessory",
+      "price": 4200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/8141171/pexels-photo-8141171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/8141165/pexels-photo-8141165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 35,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 80,
+      "weight_grams": 120,
+      "dimensions": {
+        "length": 180,
+        "width": 50,
+        "height": 0.2,
+        "unit": "cm"
+      },
+      "tags": ["scarf", "embroidery", "handmade", "women artisans", "cotton"],
+      "metadata": {
+        "materials": ["organic cotton", "natural dyes", "cotton thread"],
+        "artisan_group": "Women's Empowerment Collective",
+        "origin": "Rural India",
+        "care": "Hand wash cold with mild soap, air dry",
+        "production_time": "12-15 hours per scarf",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "mi2",
+      "name": "Traditional Ceramic Water Filter",
+      "slug": "traditional-ceramic-water-filter",
+      "description": "Handcrafted ceramic water filter made using traditional techniques. These filters provide clean drinking water to communities without access to safe water sources. Each purchase funds the distribution of additional filters to families in need.",
+      "short_description": "Artisan-made water purification system",
+      "price": 6000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6694544/pexels-photo-6694544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 25,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 3500,
+      "dimensions": {
+        "length": 35,
+        "width": 35,
+        "height": 45,
+        "unit": "cm"
+      },
+      "tags": ["water filter", "ceramic", "handcrafted", "clean water", "health"],
+      "metadata": {
+        "materials": ["local clay", "colloidal silver", "food-grade glazes"],
+        "filtration_rate": "1-2 liters per hour",
+        "capacity": "8 liters",
+        "removes": "99.9% of bacteria, protozoa, and parasites",
+        "filter_life": "1-2 years with proper maintenance",
+        "artisan_group": "Clean Water Pottery Cooperative",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "mi2",
+      "name": "Hand-Carved Soapstone Sculptures",
+      "slug": "hand-carved-soapstone-sculptures",
+      "description": "Unique soapstone animal figurines hand-carved by local artisans. Each sculpture represents native wildlife and traditional cultural symbols, providing sustainable income to artisans in regions where our clean water mission operates.",
+      "short_description": "Artisan-carved stone animal figurines",
+      "price": 3500,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/5704407/pexels-photo-5704407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/5704849/pexels-photo-5704849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 60,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 70,
+      "weight_grams": 500,
+      "dimensions": {
+        "length": 12,
+        "width": 8,
+        "height": 10,
+        "unit": "cm"
+      },
+      "tags": ["soapstone", "sculpture", "handcarved", "artisan", "wildlife"],
+      "metadata": {
+        "materials": ["locally sourced soapstone"],
+        "designs_vary": "Each piece is unique",
+        "animals": ["elephant", "giraffe", "lion", "rhino", "zebra"],
+        "origin": "Kenya",
+        "artisan_group": "Kisii Stone Carvers Association",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "mi3",
+      "name": "Hand-Sewn School Uniforms",
+      "slug": "hand-sewn-school-uniforms",
+      "description": "School uniforms hand-sewn by a cooperative of local tailors in the communities we serve. Your purchase funds both the creation of employment opportunities and the provision of additional uniforms to children who cannot afford them.",
+      "short_description": "Artisan-made school clothing supporting education",
+      "price": 4000,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/1153213/pexels-photo-1153213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/8613319/pexels-photo-8613319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 80,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 90,
+      "weight_grams": 350,
+      "dimensions": {
+        "length": 30,
+        "width": 25,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["uniform", "education", "handsewn", "children", "school"],
+      "metadata": {
+        "materials": ["cotton-polyester blend", "locally sourced buttons"],
+        "sizes": ["Children's 4-16", "Adult XS-XL"],
+        "includes": "Shirt and pants/skirt set",
+        "impact": "Each purchase funds one additional uniform for a child in need",
+        "artisan_group": "Village Tailors Cooperative",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    },
+    {
+      "campaign_id": "mi3",
+      "name": "Handmade School Supply Kit",
+      "slug": "handmade-school-supply-kit",
+      "description": "Complete school supply kit featuring handmade items including a pencil case, notebook with handwoven cover, and fabric bookmarks. Created by local artisans using sustainably sourced materials.",
+      "short_description": "Artisan-crafted educational supplies kit",
+      "price": 3200,
+      "currency": "USD",
+      "featured_image_url": "https://images.pexels.com/photos/6373297/pexels-photo-6373297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "gallery_images": [
+        "https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
+      "inventory_count": 100,
+      "is_digital": false,
+      "is_active": true,
+      "donation_percentage": 85,
+      "weight_grams": 400,
+      "dimensions": {
+        "length": 30,
+        "width": 20,
+        "height": 5,
+        "unit": "cm"
+      },
+      "tags": ["school supplies", "handmade", "education", "sustainable", "artisan"],
+      "metadata": {
+        "materials": ["recycled papers", "locally sourced fabrics", "natural dyes"],
+        "kit_includes": "Handbound notebook, pencil case, 3 bookmarks, 5 pencils, eraser",
+        "artisan_group": "Education Support Crafters",
+        "impact": "Each kit sold provides school supplies for one student",
+        "seedTag": "EXAMPLE_DATA"
+      }
+    }
+  ]
+}
