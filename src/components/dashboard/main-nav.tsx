@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "react-router-dom"
 
 import { cn } from "@/lib/utils"
-import { ThemeToggle } from "@/components/ui/theme-toggle"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function MainNav({
   className,
