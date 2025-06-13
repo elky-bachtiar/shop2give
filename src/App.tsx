@@ -1,189 +1,77 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
-import { HomePage } from './pages/HomePage';
-import { AuthPage } from './pages/AuthPage';
-import { CampaignPage } from './pages/CampaignPage';
-import { CampaignsPage } from './pages/CampaignsPage';
-import { CategoriesPage } from './pages/CategoriesPage';
-import { CategoryPage } from './pages/CategoryPage';
-import { ProductPage } from './pages/ProductPage';
-import { ProductsPage } from './pages/ProductsPage';
-import { CartPage } from './pages/CartPage';
-import { SearchPage } from './pages/SearchPage';
-import { AboutPage } from './pages/AboutPage';
-import { CreateCampaignPage } from './pages/CreateCampaignPage';
-import { CampaignAIPage } from './pages/CampaignAIPage';
-import { SuccessPage } from './pages/SuccessPage';
-import { CancelPage } from './pages/CancelPage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./components/theme-provider.js";
+import { Footer } from "./components/layout/Footer.js";
+import { Header } from "./components/layout/Header.js";
+import { Dashboard } from "@/components/dashboard/dashboard.js";
+import { ProfilePage } from "@/components/profile/profile.js";
+import { LoginPage } from "@/components/auth/login.js";
+import { RegisterPage } from "@/components/auth/register.js";
+import { AuthProvider, RequireAuth } from "./context/auth-context.js";
+import { ProductsPage } from "./pages/products.js";
+import { CampaignDetailPage } from "./pages/campaign-detail.js";
+import { CheckoutSuccessPage } from "./pages/checkout-success.js";
+import { Toaster } from "@/components/ui/sonner.js";
+import { HeroSection, FeaturedProducts, InstructionsSection, PopularCampaigns, Mission } from "@/components/home";
 
-// Error boundary component for catching route-level errors
-class ErrorBoundary extends React.Component<
-  { children: React.ReactNode, fallback?: React.ReactNode },
-  { hasError: boolean }
-> {
-  constructor(props: { children: React.ReactNode, fallback?: React.ReactNode }) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('Route error caught:', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return this.props.fallback || (
-        <div className="p-6 max-w-lg mx-auto my-10 bg-white rounded-md shadow-md">
-          <h2 className="text-2xl font-semibold text-red-600">Something went wrong</h2>
-          <p className="mt-4 text-gray-600">We apologize for the inconvenience. Please try refreshing the page.</p>
-          <button 
-            onClick={() => this.setState({ hasError: false })}
-            className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-          >
-            Try again
-          </button>
-        </div>
-      );
-    }
-
-    return this.props.children;
-  }
-}
-
-// Loading component for Suspense
-const PageLoader = () => (
-  <div className="flex items-center justify-center h-screen">
-    <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
-  </div>
-);
-
-function App() {
+function HomePage() {
   return (
-    <Router>
-      <Toaster position="top-right" />
-      <Routes>
-        <Route path="/" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <HomePage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/auth" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <AuthPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/campaign-ai" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CampaignAIPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/campaigns" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CampaignsPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        <Route path="/campaigns/:slug" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CampaignPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        <Route path="/create-campaign" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CreateCampaignPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/categories" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CategoriesPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        <Route path="/category/:slug" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CategoryPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/products" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <ProductsPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        <Route path="/products/:id" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <ProductPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/cart" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CartPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/search" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <SearchPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/about" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <AboutPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        
-        <Route path="/success" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <SuccessPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-        <Route path="/cancel" element={
-          <ErrorBoundary>
-            <Suspense fallback={<PageLoader />}>
-              <CancelPage />
-            </Suspense>
-          </ErrorBoundary>
-        } />
-      </Routes>
-    </Router>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      
+      <main className="flex-1">
+        <HeroSection />
+        <InstructionsSection />
+        <PopularCampaigns />
+        <FeaturedProducts />
+        <Mission />
+      </main>
+      
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 }
 
-export default App;
+function App() {
+  return (
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <Toaster position="top-center" />
+      <Router>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/campaign/:id" element={<CampaignDetailPage />} />
+            <Route path="/checkout/success" element={<CheckoutSuccessPage />} />
+            <Route
+              path="/dashboard"
+              element={
+                <RequireAuth>
+                  <Dashboard />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <RequireAuth>
+                  <ProfilePage />
+                </RequireAuth>
+              }
+            />
+            <Route path="/about" element={<div className="container py-12"><h1>About Us</h1></div>} />
+            <Route path="/how-it-works" element={<div className="container py-12"><h1>How It Works</h1></div>} />
+            <Route path="/faq" element={<div className="container py-12"><h1>FAQ</h1></div>} />
+            <Route path="/privacy" element={<div className="container py-12"><h1>Privacy Policy</h1></div>} />
+            <Route path="/terms" element={<div className="container py-12"><h1>Terms of Service</h1></div>} />
+            <Route path="/contact" element={<div className="container py-12"><h1>Contact Us</h1></div>} />
+          </Routes>
+        </AuthProvider>
+      </Router>
+    </ThemeProvider>
+  );
+}
+
+export default App
