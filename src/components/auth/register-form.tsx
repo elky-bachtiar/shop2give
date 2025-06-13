@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils.js"
 import { Button } from "@/components/ui/button.js"
 import { Input } from "@/components/ui/input.js"
 import { Label } from "@/components/ui/label.js"
-import { Icons } from "@/components/ui/icons.js"
+import { Icons } from "@/components/icons.js"
 import { createClient } from "@supabase/supabase-js"
 
 // Initialize Supabase client
